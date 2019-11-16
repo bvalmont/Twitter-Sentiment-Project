@@ -9,39 +9,42 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-
 <link rel="stylesheet" href="../static/css/style.css">
 
 
-
 </head>
-
-
 <body class="w3-black">
 
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
   <!-- Avatar image in top left corner -->
   <img src="https://www.rangerjoes.com/Assets/ProductImages/A7410.jpg" style="width:100%">
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-light-gray w3-hover-text-green">
     <i class="fa fa-home w3-xxlarge"></i>
     <p>HOME</p>
   </a>
-  <a href="#sentiment" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+
+  <a href="#sentiment" class="w3-bar-item w3-button w3-padding-large w3-hover-light-gray w3-hover-text-green">
     <i class="fa fa-balance-scale w3-xxlarge"></i>
     <p>SENTIMENT</p>
   </a>
-  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-light-gray w3-hover-text-green">
     <i class="fa fa-globe w3-xxlarge"></i>
     <p>MAP</p>
   </a>
-  <a href="#processOverview" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+
+  <a href="#processOverview" class="w3-bar-item w3-button w3-padding-large w3-hover-light-gray w3-hover-text-green">
     <i class="fa fa-calculator w3-xxlarge"></i>
     <p>PROCESS OVERVIEW</p>
   </a>
-  <a href="#sources" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-light-gray w3-hover-text-green">
+    <i class="fa fa-paper-plane w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+
+  <a href="#sources" class="w3-bar-item w3-button w3-padding-large w3-hover-light-gray w3-hover-text-green">
     <i class="fa fa-folder-open-o w3-xxlarge"></i>
     <p>SOURCES</p>
   </a>
@@ -57,6 +60,7 @@
     <a href="#sentiment" class="w3-bar-item w3-button" style="width:25% !important">SENTIMENT</a>
     <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
     <a href="#processflow" class="w3-bar-item w3-button" style="width:25% !important">PROCESS OVERVIEW</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
     <a href="#sources" class="w3-bar-item w3-button" style="width:25% !important">SOURCES</a>
   </div>
 </div>
@@ -84,10 +88,33 @@
   <div class="w3-content w3-justify w3-text-black w3-padding-64 w3-light-gray" id="sentiment">
     <h2 class="w3-text-black"><strong>SENTIMENT</strong></h2>
     <hr style="width:200px" class="w3-opacity">
-    <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    <p>Discussion of impeachment of the U.S. president is a serious topic and even just the discussion alone,
+        as well as the actual act of presidential impeachment, has a material impact on the daily lives of U.S. citizens and 
+        denizens of the globe.
+        Having a solid understanding of the situation helps to inform individuals and organizations on how they should best adapt 
+        to any fallout and new potential presidential regime. The Deep State App is a tool to help provide light to this understanding.
     </p>
+    
+    <p>The Deep State App is a social media sentiment analysis with the purpose to assess the current sentiment on presidential 
+      impeachment; basically, how do people feel about the impeachment of the U.S. president. 
+      The social media platform chosen to assess current sentiments is Twitter because Twitter provides live accessible 
+      textual information/posts from a broad array of the U.S./global population. The Deep State App uses the Vader Sentiment Analysis
+      python code to assess each tweet's sentiment and determine a sentiment score. This data and additional metadata is then stored 
+      in a postgresql database.  The Deep State App then visualizes this data.
+    </p>  
+                                                                                          
+    
+    
+    <h2 class="w3-center">Live Twitter Sentiment</h2>
+    <p>  
+      The following chart shows the live sentiment scores of tweets related to the word 'impeachment'. -1 indicates the most 
+      negative sentiment, and +1 indicates the most positive sentiment. Values between -1 and +1 indicate the degree of 
+      negative or positive sentiment.
+    </p> 
+
+    <iframe src="https://earthquake-track.herokuapp.com/" style="width:100%;height:600px"></iframe>
+    <iframe src="https://public.tableau.com/profile/daniel.jones1438#!/vizhome/CitiBikeAnalysis_15733598017360/Story?publish=yes" style="width:100%;height:600px"></iframe>
+
     <h3 class="w3-padding-16 w3-text-black">My Skills</h3>
     <p class="w3-wide">Photography</p>
     <div class="w3-white">
@@ -168,28 +195,16 @@
 
     </div>
     
-    <!-- Testimonials -->
-    <h3 class="w3-padding-24 w3-text-black">My Reputation</h3>  
-    <img src="/w3images/bandmember.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-margin-right">Chris Fox.</span> CEO at Mighty Schools.</p>
-    <p>Jane Doe saved us from a web disaster.</p><br>
-    
-    <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-margin-right">Rebecca Flex.</span> CEO at Company.</p>
-    <p>No one is better than Jane Doe.</p>
-  <!-- End About Section -->
-
-
 
   </div>
   
-  <!-- Portfolio Section -->
+  <!-- Map Section -->
   <div class="w3-padding-64 w3-content w3-light-gray" id="photos">
     <h2 class="w3-text-black"><strong>MAP</strong></h2>
     <hr style="width:200px" class="w3-opacity">
 
     <!-- Grid for photos -->
-    <div class="w3-row-padding" style="margin:0 -16px">
+    <!-- <div class="w3-row-padding" style="margin:0 -16px">
       <div class="w3-half">
         <img src="/w3images/wedding.jpg" style="width:100%">
         <img src="/w3images/rocks.jpg" style="width:100%">
@@ -201,13 +216,15 @@
         <img src="/w3images/chef.jpg" style="width:100%">
         <img src="/w3images/wedding.jpg" style="width:100%">
         <img src="/w3images/p6.jpg" style="width:100%">
-      </div>
+      </div> -->
     <!-- End photo grid -->
-    </div>
-  <!-- End Portfolio Section -->
+    <!-- </div> -->
+  <!-- End Map Section -->
   </div>
 
-  <!-- Contact Section -->
+
+
+  <!-- Process Overview Section -->
   <div class="w3-padding-64 w3-content w3-text-black w3-light-gray" id="processOverview">
     <h2 class="w3-text-black"><strong>PROCESS OVERVIEW</strong></h2>
     <hr style="width:200px" class="w3-opacity">
@@ -234,21 +251,23 @@
           <div class="row">
             <img src="../static/img/sentiment-additional.png" style="width:100%">
           </div>    
- 
-                    
-                  
       </div>
-                
-      
+    </div>
+  </div>  
+  <!-- End Process Overview Section -->
 
-      <p><i class="fa fa-map-marker fa-fw w3-text-black w3-xxlarge w3-margin-right"></i> Chicago, US</p>
-      <p><i class="fa fa-phone fa-fw w3-text-black w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
-      <p><i class="fa fa-envelope fa-fw w3-text-black w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
-    </div><br>
 
- 
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-black w3-light-gray" id="contact">
+    <h2 class="w3-text-black"><strong>CONTACT</strong></h2>
+    <hr style="width:200px" class="w3-opacity">
 
-    <p>Lets get in touch. Send me a message:</p>
+    <p><i class="fa fa-map-marker fa-fw w3-text-black w3-xxlarge w3-margin-right"></i> Houston, TX, US</p>
+    <p><i class="fa fa-phone fa-fw w3-text-black w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
+    <p><i class="fa fa-envelope fa-fw w3-text-black w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+    <br>
+
+    <p>Send Message:</p>
 
     <form action="/action_page.php" target="_blank">
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
@@ -256,7 +275,7 @@
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
       <p>
-        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+        <button class="w3-button w3-black w3-padding-large" type="submit">
           <i class="fa fa-paper-plane"></i> SEND MESSAGE
         </button>
       </p>
@@ -265,6 +284,9 @@
   </div>
 
 
+
+
+<!-- Sources Section -->
   <div class="w3-padding-64 w3-content w3-text-black w3-light-gray" id="sources">
     <h2 class="w3-text-black"><strong>SOURCES:</strong></h2>
     <hr style="width:200px" class="w3-opacity">
@@ -276,6 +298,8 @@
     <h4 class="w3-text-black"><i class="fa fa-link fa-fw w3-text-black w3-xxlarge w3-margin-right"></i><a href="https://pypi.org/project/vaderSentiment/2.1/" target="_blank" class="w3-hover-text-green">https://pypi.org/project/vaderSentiment/2.1/</a></h4>
     <h4 class="w3-text-black"><i class="fa fa-twitter fa-fw w3-text-black w3-xxlarge w3-margin-right"></i><a href="https://www.twitter.com" target="_blank" class="w3-hover-text-green">www.twitter.com</a></h4>
     <h4 class="w3-text-black"><i class="fa fa-link fa-fw w3-text-black w3-xxlarge w3-margin-right"></i><a href="https://techbootcamps.rice.edu/data/" target="_blank" class="w3-hover-text-green">https://techbootcamps.rice.edu/data/</a></h4>
+  
+  <!-- End Sources Section -->
   </div>
   
 
