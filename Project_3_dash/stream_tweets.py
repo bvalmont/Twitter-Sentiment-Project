@@ -10,7 +10,7 @@ import time
 
 analyzer = SentimentIntensityAnalyzer()
 
-conn_string = "host='localhost' dbname='Twitter Sentiment' user='postgres' password='Alicia.30'"
+conn_string = "host='localhost' dbname='Twitter Sentiment' user='postgres' password='password'"
 conn = psycopg2.connect(conn_string)
 cursor = conn.cursor()
 
