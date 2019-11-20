@@ -19,3 +19,10 @@ In order for us to complete this customer request we utilized:
    - Plotly Dash for visualizations
    - Vader Sentiment - VADER (Valence Aware Dictionary and sEntiment Reasoner) is a lexicon and rule-based sentiment analysis tool that is specifically attuned to sentiments expressed in social media
    - Heroku
+
+## Data Sources 
+  - **Twitter** - ( https://www.twitter.com ) 
+  - Twitter Streaming API - a push of data as tweets happen in near real-time
+  
+## Instructions
+ 
