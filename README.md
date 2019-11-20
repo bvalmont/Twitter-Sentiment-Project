@@ -13,7 +13,9 @@ Team Deep-State was tasked with using Machine Learning to solve a problem worth 
 In order for us to complete this customer request we utilized:
    - Python
    - Jupyter NoteBooks
+   - Visual Studio Code
    - Postgres
-   - Microsoft Excel
-   - CSV files
-   - QuickDBD ( Postgres ER Diagram )
+   - Tweepy - Python library for accessing the Twitter API
+   - Plotly Dash for visualizations
+   - Vader Sentiment - VADER (Valence Aware Dictionary and sEntiment Reasoner) is a lexicon and rule-based sentiment analysis tool that is specifically attuned to sentiments expressed in social media
+   - Heroku
