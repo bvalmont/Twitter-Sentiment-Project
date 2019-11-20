@@ -10,7 +10,7 @@ Team Deep-State was tasked with using Machine Learning to solve a problem worth 
 
 ## Technology
 
-In order for us to complete this customer request we utilized:
+In order for us to complete this request, we utilized:
    - Python
    - Jupyter NoteBooks
    - Visual Studio Code
