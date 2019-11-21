@@ -25,6 +25,8 @@ In order for us to complete this request, we utilized:
   - Twitter Streaming API - a push of data as tweets happen in near real-time
   
 ## Design
+![alt text](![alt text](https://github.com/bvalmont/Twitter-Sentiment-Project/blob/master/Images/man-person-people-emotions-1.jpg)
+
 
 
 ## Visualizations
