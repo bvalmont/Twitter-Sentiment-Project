@@ -34,7 +34,7 @@ The next step in the process was to load the data in the Postgres database; howe
 
 - Sentiment Analysis
 
-Prior to loading the data into Postgres, the tweets needed to be 
+Prior to loading the data into Postgres, we needed to determine whether the tweets were positive, neutral, and negative.
 
 - Database Load
 
@@ -43,6 +43,8 @@ The next step in the process was to load the data in the PostgreSQL database.  P
 
 
 ## Visualizations
+
+![alt text](
  
 ## Submission
 
