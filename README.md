@@ -32,6 +32,8 @@ In order for us to complete this request, we utilized:
    As stated in the background, the purpose of the project was to perform a sentiment analysis on twitter data related to the impeachment of President Donald Trump.  The first step in the process is collecting tweets in real-time from Twitter.  In order to do this, we imported Tweepy, a python library for accessing the Twitter Streaming API.  Using the Twitter Streaming API, users can expect to receive anywhere from 1% of the tweets to over 40% of the tweets in near real-time.  One tweet can produce up to 150 attributes; therefore, for this project we only collected data on five of the attributes: text, coordinates, place, location, and screen name.
 The next step in the process was to load the data in the Postgres database; however, we found that vast majority of the "coordinates" were not populated.  One of the objectives of the project was to have a map with real-time plots displaying the location of the tweets, which requires the geo information.  Since the locations for most of the tweets were populated, we created code using the Google Map API which produced the latitude and longitude for the "locations" associated with each tweet.  As a result, we would need to add two additional fields to our database.
 
+- Sentiment Analysis
+
 - Load
 
    The next step in the process was to load the data in the Postgres database.  One of the objectives of the project was to have map with real-time plots displaying the location of the tweets.  We found that vast majority of the tweets do not have data for the attribute "coordinates".  However, the majority of the tweets do have the attribute location.  
