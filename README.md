@@ -24,9 +24,15 @@ In order for us to complete this request, we utilized:
   - **Twitter** - ( https://www.twitter.com ) 
   - Twitter Streaming API - a push of data as tweets happen in near real-time
   
-## Design
+## Project Design
 ![alt text](https://github.com/bvalmont/Twitter-Sentiment-Project/blob/master/Images/Overview-pg.png)
+- Data Collection
 
+   As stated in the background, the purpose of the project was to perform a sentiment analysis on twitter data related to the impeachment of President Donald Trump.  The first step in the process is collecting tweets in real-time from Twitter.  In order to do this, we imported Tweepy, a python library for accessing the Twitter Streaming API.  Using the Twitter Streaming API, users can expect to receive anywhere from 1% of the tweets to over 40% of the tweets in near real-time.  One tweet can produce up to 150 attributes; therefore, for this project we only collected data on five of the attributes: text, coordinates, place, location, and screen name.
+   
+- Load
+
+   
 
 
 ## Visualizations
