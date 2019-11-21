@@ -44,7 +44,7 @@ The next step in the process was to load the data in the PostgreSQL database.  P
 
 ## Visualizations
 
-![alt text](
+![alt text](https://github.com/bvalmont/Twitter-Sentiment-Project/blob/master/Images/sentiment_stream.PNG)
  
 ## Submission
 
