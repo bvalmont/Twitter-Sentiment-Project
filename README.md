@@ -24,7 +24,10 @@ In order for us to complete this request, we utilized:
   - **Twitter** - ( https://www.twitter.com ) 
   - Twitter Streaming API - a push of data as tweets happen in near real-time
   
-## Instructions
+## Design
+
+
+## Visualizations
  
 ## Submission
 
