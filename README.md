@@ -36,7 +36,7 @@ The next step in the process was to load the data in the Postgres database; howe
 
 - Load
 
-   The next step in the process was to load the data in the Postgres database.  One of the objectives of the project was to have map with real-time plots displaying the location of the tweets.  We found that vast majority of the tweets do not have data for the attribute "coordinates".  However, the majority of the tweets do have the attribute location.  
+The next step in the process was to load the data in the PostgreSQL database.  Python and the psycopg2 library were utilized to connect to a cloud based version of PostgreSQL since the app would be deployed to a production server.  The PostgreSQL table serving the app would need to have columns representing the data being steamed from Twitter.  In this case the most important columns for the app were location, in the format of Here, TX which was converted to lat and lng columns.  The tweet column contained actual tweets of twitter users which the machine learning utilized to assign a sentiment score which was also a seperate column.  The columns mentioned in the table would be used to create visualizations such as a real-time sentiment analysis graph and a map of the United States that visuzlizes the location of the twitter user along with a color of red or blue for the score.
    
 
 
