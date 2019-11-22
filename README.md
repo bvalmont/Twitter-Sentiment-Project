@@ -36,12 +36,12 @@ The next step in the process was to load the data in the Postgres database; howe
 
 Prior to loading the data into Postgres, we needed to determine whether the tweets were positive, neutral, or negative. For the sentiment analysis, we used VADER sentiment.  VADER (Valence Aware Dictionary and sEntiment Reasoner) is a lexicon and rule-based sentiment analysis tool that is specifically attuned to sentiments expressed in social media.  VADER combines a dictionary, which maps lexical features to emotion intensity, and five simple heuristics, which encode how contextual elements increment, decrement, or negate the the sentiment of text.  The power of the lexical approach lies in the fact that we do not need to train a model using labeled data, since we have everything we need to assess the sentiment of sentences in the dictionary of emotions. VADER returns a sentiment score in the range -1 to 1,from most negative to most positive.  The sentiment score of a sentence is calculated by summing up the sentiment scores of each VADER dictionary-listed word in the sentence.  Individual words have a sentiment score between -4 to 4, but normalization is applied to the total to convert it to a value between -1 and 1.
 
+- Machine Learning
+
 - Database Load
 
 The next step in the process was to load the data in the PostgreSQL database.  Python and the psycopg2 library were utilized to connect to a cloud based version of PostgreSQL since the app would be deployed to a production server.  The PostgreSQL table serving the app would need to have columns representing the data being steamed from Twitter.  In this case the most important columns for the app were location, in the format of Here, TX which was converted to lat and lng columns.  The tweet column contained actual tweets of twitter users which the machine learning utilized to assign a sentiment score which was also a seperate column.  The columns mentioned in the table would be used to create visualizations such as a real-time sentiment analysis graph and a map of the United States that visualizes the location of the twitter user along with a color of red or blue for the score.
-
-- Machine Learning Model
-   
+  
 - Visualizations
 
 Next, we created a live-updating graph of Twitter sentiment for a term we choose, in this case 'impeachment'. To accomplish this we utilized a live graph created with Dash and Python. Dash is a productive Python framework for building web applications. Dash is written on top of Flask and Plotly.js. Our Dash app is viewed in the web browser and shared through a URL. 
