@@ -15,8 +15,8 @@ from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
 from .twitter_stream import *
 
 analyzer = SentimentIntensityAnalyzer()
-
-conn_string = "host='#####' dbname='#####' user='#####' password='#####'"
+#conn_string = "host='####' dbname='####' user='####' password='####'"
+conn_string = "host='####' dbname='####' user='####' password='####'"
 conn = psycopg2.connect(conn_string)
 cursor = conn.cursor()
 
@@ -25,6 +25,7 @@ cursor = conn.cursor()
 app = dash.Dash(__name__)
 server = app.server
 app.title="twitterpullapp"
+
 
 
 

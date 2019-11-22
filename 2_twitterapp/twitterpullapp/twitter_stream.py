@@ -8,17 +8,22 @@ import time
 import requests
 from keras.models import load_model
 import pandas as pd
-
+#import os
 
 analyzer = SentimentIntensityAnalyzer()
 
-conn_string = "host='####' dbname='####' user='####' password='####'"
+#conn_string = "host='####' dbname='####' user='####' password='####'"
 
+conn_string = "host='####' dbname='####' user='####' password='####'"
 conn = psycopg2.connect(conn_string)
 cursor = conn.cursor()
 
+#dirname = os.path.dirname(__file__)
+#filename = os.path.join(dirname, 'static\sentiment_classifier.h5')
 
+#model = load_model(filename)
 model = load_model("twitterpullapp/sentiment_classifier.h5")
+
 model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
 
 # create a dictionary to store your twitter credentials
@@ -79,18 +84,33 @@ class listener(StreamListener):
         tweet_time = all_data['timestamp_ms']
 
         # Google developer API key
-        gkey = "####"
+        #gkey = "####"
+
+
 
         # Target city
-        target_city = all_data["user"]["location"]
+        #target_city = all_data["user"]["location"]
+
+        try:
+            target_city = all_data["user"]["location"].split(",")[0]
+            print(target_city)
+        except:
+            target_city = "NaN"
+
+
+
 
         # Build the endpoint URL
-        target_url = ('https://maps.googleapis.com/maps/api/geocode/json?'
-                      'address={0}&key={1}').format(target_city, gkey)
+        #target_url = ('https://maps.googleapis.com/maps/api/geocode/json?'
+        #              'address={0}&key={1}').format(target_city, gkey)
+
+        target_url = 'https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw/2bf258763cdddd704f8ffd3ea9a3e81d25e2c6f6/cities.json'              
 
         # Run a request to endpoint and convert result to json
         try:
             geo_data = requests.get(target_url).json()
+            
+
         # Print the json
         except:
             geo_data = "NaN"
@@ -101,8 +121,17 @@ class listener(StreamListener):
             lng = 0
         else:
             try:
-                lat = geo_data["results"][0]["geometry"]["location"]["lat"]
-                lng = geo_data["results"][0]["geometry"]["location"]["lng"]
+                lat = 0
+                lng = 0
+                #lat = geo_data["results"][0]["geometry"]["location"]["lat"]
+                #lng = geo_data["results"][0]["geometry"]["location"]["lng"]
+                for i in range(0, 1000):
+                    if geo_data[i]["city"] == target_city:
+                        lat = lat + geo_data[i]["latitude"]
+                        lng = lng + geo_data[i]["longitude"]
+                        print(lat)
+                        print(lng)
+
             except:
                 lat = 0
                 lng = 0
