@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<!---html template source: https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_dark_portfolio&stacked=h----->
+<title>Deep State</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../static/css/style.css">
+
+
+</head>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="https://www.rangerjoes.com/Assets/ProductImages/A7410.jpg" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-light-gray w3-hover-text-green">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+
+  <a href="#sentiment" class="w3-bar-item w3-button w3-padding-large w3-hover-light-gray w3-hover-text-green">
+    <i class="fa fa-balance-scale w3-xxlarge"></i>
+    <p>SENTIMENT</p>
+  </a>
+
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-light-gray w3-hover-text-green">
+    <i class="fa fa-globe w3-xxlarge"></i>
+    <p>MAP</p>
+  </a>
+
+  <a href="#processOverview" class="w3-bar-item w3-button w3-padding-large w3-hover-light-gray w3-hover-text-green">
+    <i class="fa fa-calculator w3-xxlarge"></i>
+    <p>PROCESS OVERVIEW</p>
+  </a>
+
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-light-gray w3-hover-text-green">
+    <i class="fa fa-paper-plane w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+
+  <a href="#sources" class="w3-bar-item w3-button w3-padding-large w3-hover-light-gray w3-hover-text-green">
+    <i class="fa fa-folder-open-o w3-xxlarge"></i>
+    <p>SOURCES</p>
+  </a>
+</nav>
+
+
+
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#sentiment" class="w3-bar-item w3-button" style="width:25% !important">SENTIMENT</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="#processflow" class="w3-bar-item w3-button" style="width:25% !important">PROCESS OVERVIEW</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+    <a href="#sources" class="w3-bar-item w3-button" style="width:25% !important">SOURCES</a>
+  </div>
+</div>
+
+
+
+<!-- Page Content -->
+<div class="w3-padding-large w3-light-gray" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-light-gray" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">DEEP</span> STATE</h1>
+    <h2>Social Media Sentiment Analysis using Twitter</h2>
+    <h2>Presidential Impeachment</h2>
+    <div class="col-md-8">
+        <video class="bg-vid" autoplay loop muted id="myVideo">
+            <source src="../static/img/stock-footage-scales-of-justice-on-a-black-background-ruling-or-judgement.webm" type="video/webm">
+        </video>
+    </div>
+   
+  </header>
+
+
+
+  <!-- Sentiment Section -->
+  <div class="w3-content w3-justify w3-text-black w3-padding-64 w3-light-gray" id="sentiment">
+    <h2 class="w3-text-black"><strong>SENTIMENT</strong></h2>
+    <!-- <hr style="width:200px" class="w3-opacity"> -->
+    <p>Discussion of impeachment of the U.S. president is a serious topic and even just the discussion alone,
+        as well as the actual act of presidential impeachment, has a material impact on the daily lives of U.S. citizens and 
+        denizens of the globe.
+        Having a solid understanding of the situation helps to inform individuals and organizations on how they should best adapt 
+        to any fallout and new potential presidential regime. The Deep State App is a tool to help provide light to this understanding.
+    </p>
+    
+    <p>The Deep State App is a social media sentiment analysis with the purpose to assess the current sentiment on presidential 
+      impeachment; basically, how do people feel about the impeachment of the U.S. president. 
+      The social media platform chosen to assess current sentiments is Twitter because Twitter provides live accessible 
+      textual information/posts from a broad array of the U.S./global population. The Deep State App uses the Vader Sentiment Analysis
+      python code to assess each tweet's sentiment and determine a sentiment score. This data and additional metadata is then stored 
+      in a postgresql database.  The Deep State App then visualizes this data.
+    </p>  
+    <p>  
+      The following chart shows the live sentiment scores of tweets related to the word 'impeachment'. -1 indicates the most 
+      negative sentiment, and +1 indicates the most positive sentiment. Values between -1 and +1 indicate the degree of 
+      negative or positive sentiment.
+    </p>                                                                                           
+    
+    
+
+    <iframe src="https://twitter-graphapp.herokuapp.com/" style="width:100%;height:600px"></iframe>
+    <p>
+      *Note: New search terms entered into the search term box will result in a sub-population of the original population of tweets
+      filtered|pulled on the term 'impeachment'.
+    </p>
+       
+
+  </div> 
+  
+  <!-- Map Section -->
+  <div class="w3-padding-64 w3-content w3-light-gray" id="photos">
+    <h2 class="w3-text-black"><strong>MAP</strong></h2>
+    <!-- <hr style="width:200px" class="w3-opacity"> -->
+
+    <p>The following map shows live sentiment scores of tweets related to the word 'impeachment'. 'Red' dots indicate negative sentiment.
+      'Blue' dots indicate positive sentiment.
+    </p>
+    <iframe src="https://twitter-mapapp.herokuapp.com/" id="live-graph-geo" style="width:100%;height:600px"></iframe>
+    
+    <p>
+    Note: New search terms entered into the search term box will result in a sub-population of the original population of tweets
+    filtered|pulled on the term 'impeachment'.
+    </p>
+
+  </div>
+
+
+
+  <!-- Process Overview Section -->
+  <div class="w3-padding-64 w3-content w3-text-black w3-light-gray" id="processOverview">
+    <h2 class="w3-text-black"><strong>PROCESS OVERVIEW</strong></h2>
+    <!-- <hr style="width:200px" class="w3-opacity"> -->
+
+
+     <div class="w3-section">
+      <div class="col-md-12">
+          <div class="row">
+            <img src="../static/img/overview-page.png" style="width:100%">   
+          </div>
+
+          <div class="row">
+              <img src="../static/img/what-is-vader.png" style="width:100%">   
+          </div>
+
+          <div class="row">
+              <img src="../static/img/sentiment-analysis.png" style="width:100%">   
+          </div>
+
+          <div class="row">
+              <img src="../static/img/scoring.png" style="width:100%">   
+          </div>
+
+          <div class="row">
+            <img src="../static/img/sentiment-additional.png" style="width:100%">
+          </div>    
+
+          <div class="row">
+            <img src="../static/img/ML-1.png" style="width:100%">
+          </div>   
+
+          <div class="row">
+            <img src="../static/img/ML-2.png" style="width:100%">
+          </div>   
+
+
+
+      </div>
+    </div>
+  </div>  
+  <!-- End Process Overview Section -->
+
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-black w3-light-gray" id="contact">
+    <h2 class="w3-text-black"><strong>CONTACT</strong></h2>
+    <!-- <hr style="width:200px" class="w3-opacity"> -->
+
+    <p><i class="fa fa-map-marker fa-fw w3-text-black w3-xxlarge w3-margin-right"></i> Houston, TX, US</p>
+    <p><i class="fa fa-phone fa-fw w3-text-black w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
+    <p><i class="fa fa-envelope fa-fw w3-text-black w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+    <br>
+
+    <p>Send Message:</p>
+
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-black w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>
+
+
+
+
+<!-- Sources Section -->
+  <div class="w3-padding-64 w3-content w3-text-black w3-light-gray" id="sources">
+    <h2 class="w3-text-black"><strong>SOURCES:</strong></h2>
+    <!-- <hr style="width:200px" class="w3-opacity"> -->
+  
+    <h4 class="w3-text-black"><i class="fa fa-github fa-fw w3-text-black w3-xxlarge w3-margin-right"></i><a href="https://github.com/cjhutto/vaderSentiment" target="_blank" class="w3-hover-text-green">https://github.com/cjhutto/vaderSentiment</a></h4>
+    <h4 class="w3-text-black"><i class="fa fa-link fa-fw w3-text-black w3-xxlarge w3-margin-right"></i><a href="http://comp.social.gatech.edu/papers/icwsm14.vader.hutto.pdf" target="_blank" class="w3-hover-text-green">Hutto, C.J. & Gilbert, E.E. (2014). VADER: A Parsimonious Rule-based Model for Sentiment Analysis of Social Media; ext. Eighth International Conference on Weblogs and Social Media (ICWSM-14). Ann Arbor, MI, June 2014.</a></h4>
+    <h4 class="w3-text-black"><i class="fa fa-link fa-fw w3-text-black w3-xxlarge w3-margin-right"></i><a href="http://datameetsmedia.com/vader-sentiment-analysis-explained/" target="_blank" class="w3-hover-text-green">http://datameetsmedia.com/vader-sentiment-analysis-explained/</a></h4>
+    <h4 class="w3-text-black"><i class="fa fa-link fa-fw w3-text-black w3-xxlarge w3-margin-right"></i><a href="https://www.geeksforgeeks.org/python-sentiment-analysis-using-vader/" target="_blank" class="w3-hover-text-green">https://www.geeksforgeeks.org/python-sentiment-analysis-using-vader/</a></h4>
+    <h4 class="w3-text-black"><i class="fa fa-link fa-fw w3-text-black w3-xxlarge w3-margin-right"></i><a href="https://pypi.org/project/vaderSentiment/2.1/" target="_blank" class="w3-hover-text-green">https://pypi.org/project/vaderSentiment/2.1/</a></h4>
+    <h4 class="w3-text-black"><i class="fa fa-twitter fa-fw w3-text-black w3-xxlarge w3-margin-right"></i><a href="https://www.twitter.com" target="_blank" class="w3-hover-text-green">www.twitter.com</a></h4>
+    <h4 class="w3-text-black"><i class="fa fa-link fa-fw w3-text-black w3-xxlarge w3-margin-right"></i><a href="https://techbootcamps.rice.edu/data/" target="_blank" class="w3-hover-text-green">https://techbootcamps.rice.edu/data/</a></h4>
+  
+  <!-- End Sources Section -->
+  </div>
+  
+
+
+  
+  <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-black w3-light-gray w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <!-- End footer -->
+  </footer>
+
+
+
+<!-- END PAGE CONTENT -->
+</div>
+
+
+
+
+</body>
+
+
+
+
+</html>
+
